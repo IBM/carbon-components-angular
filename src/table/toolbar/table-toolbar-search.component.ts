@@ -22,16 +22,12 @@ import { NG_VALUE_ACCESSOR } from "@angular/forms";
 export class TableToolbarSearch extends Search implements OnInit, AfterViewInit {
 	tableSearch = true;
 
-	@HostBinding("class.bx--toolbar-search-container-expandable") @Input() expandable = false;
+	@Input() expandable = false;
 
-	@HostBinding("class.bx--toolbar-search-container-persistent") get persistentClass() { return !this.expandable; }
-
-	@HostBinding("class.bx--toolbar-search-container-active") get activeClass() {
-		return this.active && (this.value !== null || this.value !== "");
-	}
+	@HostBinding("class.bx--toolbar-content") hostClass = true;
 
 	ngOnInit() {
-		this.size = "sm";
+		this.size = "xl";
 		if (this.expandable) {
 			this.toolbar = true;
 		}
