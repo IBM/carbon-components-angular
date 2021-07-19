@@ -117,7 +117,7 @@ export class Button implements OnInit {
 	 *		[hasAssistiveText]="true"
 	 *		assistiveTextPlacement="top"
 	 *		assistiveTextAlignment="center">
-	 *		<svg class="bx--btn__icon" ibmIconCopy size="20"></svg>
+	 *		<svg class="bx--btn__icon" ibmIcon="copy" size="20"></svg>
 	 *		<span class="bx--assistive-text">Icon description</span>
 	 *	</button>
 	 * ```

@@ -38,7 +38,7 @@ import { cycleTabs, getFocusElementList } from "carbon-components-angular/common
 						<section class="modal-body">
 							<h1>Sample modal works.</h1>
 							<button class="btn--icon-link" nPopover="Hello there" title="Popover title" placement="right" appendInline="true">
-								<svg ibmIcon="info" size="sm"></ibm-icon>
+								<svg ibmIcon="info" size="sm"></svg>
 							</button>
 							{{modalText}}
 						</section>

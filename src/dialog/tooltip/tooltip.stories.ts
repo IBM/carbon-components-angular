@@ -2,9 +2,9 @@ import { storiesOf, moduleMetadata } from "@storybook/angular";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, text, select } from "@storybook/addon-knobs/angular";
 
-import { InformationFilledModule } from "@carbon/icons-angular";
 import { DialogModule } from "../dialog.module";
 import { TagModule } from "../../tag/tag.module";
+import { IconModule } from "../../icon/icon.module";
 import { PlaceholderModule } from "../../placeholder/index";
 import { DocumentationModule } from "../../documentation-component/documentation.module";
 import { boolean, object } from "@storybook/addon-knobs";
@@ -13,9 +13,9 @@ storiesOf("Components|Tooltip", module)
 	.addDecorator(
 		moduleMetadata({
 			imports: [
+				IconModule,
 				DialogModule,
 				PlaceholderModule,
-				InformationFilledModule,
 				TagModule,
 				DocumentationModule
 			]
@@ -42,7 +42,7 @@ storiesOf("Components|Tooltip", module)
 						trigger="click"
 						[placement]="placement">
 						<div role="button">
-							<ibm-icon-information-filled size="16"></ibm-icon-information-filled>
+							<svg ibmIcon="information--filled" size="16"></svg>
 						</div>
 					</span>
 				</div>
@@ -168,7 +168,7 @@ storiesOf("Components|Tooltip", module)
 						trigger="click"
 						[placement]="placement">
 						<div role="button">
-							<ibm-icon-information-filled size="16"></ibm-icon-information-filled>
+							<svg ibmIcon="information--filled" size="16"></svg>
 						</div>
 					</span>
 				</div>
@@ -231,7 +231,7 @@ storiesOf("Components|Tooltip", module)
 						trigger="click"
 						[placement]="placement">
 						<div role="button">
-							<ibm-icon-information-filled size="16"></ibm-icon-information-filled>
+							<svg ibmIcon="information--filled" size="16"></svg>
 						</div>
 					</span>
 				</div>

@@ -24,7 +24,6 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26",
     "carbon-components": "^10.0.0",
-    "@carbon/icons-angular": "11.2.1",
     "carbon-components-angular": "latest"
   },
   "devDependencies": {

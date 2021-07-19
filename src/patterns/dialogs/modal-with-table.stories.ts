@@ -12,7 +12,6 @@ import {
 	TableModel,
 	TableModule
 } from "../../table/index";
-import { Data_2Module } from "@carbon/icons-angular";
 import { ButtonModule } from "../../button/index";
 import { ProgressIndicatorModule } from "../../progress-indicator";
 import { LinkModule } from "../../link/index";
@@ -29,7 +28,7 @@ import { LinkModule } from "../../link/index";
 					(valueChange)="onSearch($event)">
 				</ibm-table-toolbar-search>
 				<button ibmButton="ghost" class="toolbar-action" size="sm">
-					<svg size="16" class="bx--toolbar-action__icon" ibmIconData_2></svg>
+					<svg size="16" class="bx--toolbar-action__icon" ibmIcon="Data_2"></svg>
 				</button>
 			</ibm-table-toolbar-content>
 		</ibm-table-toolbar>
@@ -209,7 +208,6 @@ storiesOf("Patterns|Dialogs", module)
 			imports: [
 				ModalModule,
 				TableModule,
-				Data_2Module,
 				ButtonModule,
 				ProgressIndicatorModule,
 				LinkModule

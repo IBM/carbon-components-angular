@@ -37,6 +37,8 @@ storiesOf("Components|Code Snippet", module).addDecorator(
 ) // that's it, no more after this line
 `;
 
+const singleLineOfCode = `import { UIShellModule } from 'carbon-components-angular'; // Single line of code`;
+
 @Component({
 	selector: "app-dynamic-code-snippet",
 	template: `
@@ -64,9 +66,9 @@ storiesOf("Components|Code Snippet", module).addDecorator(
 )
 	.addDecorator(withKnobs)
 	.add("Basic", () => ({
-		template: `<ibm-code-snippet display="single">{{code}}</ibm-code-snippet>`,
+		template: `<ibm-code-snippet display="single">{{singleCode}}</ibm-code-snippet>`,
 		props: {
-			code
+			singleCode: singleLineOfCode
 		}
 	}))
 	.add("Multi", () => ({

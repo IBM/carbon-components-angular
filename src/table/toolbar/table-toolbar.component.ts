@@ -32,7 +32,7 @@ import { TableRowSize } from "../table.types";
  *			<ibm-table-toolbar-content>
  *			<ibm-table-toolbar-search [expandable]="true"></ibm-table-toolbar-search>
  *			<button ibmButton="toolbar-action">
- *				<svg ibmIcon="settings" size="16" class="bx--toolbar-action__icon"></ibm-icon-settings>
+ *				<svg ibmIcon="settings" size="16" class="bx--toolbar-action__icon"></svg>
  *			</button>
  *			<button ibmButton="primary" size="sm">
  *				Primary Button
